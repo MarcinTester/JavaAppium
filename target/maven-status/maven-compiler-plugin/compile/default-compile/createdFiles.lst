@@ -1,1 +1,5 @@
-AppiumProject\JavaAppium\App.class
+PageObjects\DataWidgetsPage.class
+PageObjects\InlinePage.class
+PageObjects\HomePage.class
+PageObjects\ViewsPage.class
+Resources\base.class

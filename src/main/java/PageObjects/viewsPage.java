@@ -8,9 +8,9 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class viewsPage {
+public class ViewsPage {
 
-	public viewsPage(AndroidDriver<AndroidElement> driver)
+	public ViewsPage(AndroidDriver<AndroidElement> driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
