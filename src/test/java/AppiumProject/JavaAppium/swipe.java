@@ -3,6 +3,8 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebElement;
 
+import PageObjects.homePage;
+import PageObjects.viewsPage;
 import Resources.base;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -17,8 +19,16 @@ public class swipe extends base {
 
 	public static void main(String[] args) throws MalformedURLException {
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
-		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
-		driver.findElementByAndroidUIAutomator("text(\"Date Widgets\")").click();
+		
+		homePage homePage = new homePage(driver); 
+		
+
+		homePage.viewsClick();
+		
+		viewsPage viewsPage = new viewsPage(driver); 
+		
+		viewsPage.dateWidgetsClick();
+		
 		driver.findElementByAndroidUIAutomator("text(\"2. Inline\")").click();
 		
 		driver.findElementByXPath("//*[@content-desc='9']").click();
