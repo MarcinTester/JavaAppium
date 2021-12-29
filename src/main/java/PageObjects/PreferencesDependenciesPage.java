@@ -9,6 +9,8 @@
 	import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 	public class PreferencesDependenciesPage {
+		
+		public AndroidDriver<AndroidElement> driver;
 
 		public PreferencesDependenciesPage(AndroidDriver<AndroidElement> driver)
 		{
@@ -21,13 +23,60 @@
 		@AndroidFindBy(xpath="//android.widget.TextView[@text='WiFi settings']")
 		public WebElement WiFisettings;	
 		
-		public void CheckBoxClick()
+		@AndroidFindBy(className="android.widget.EditText")
+		public WebElement TextBox;	
+		
+		
+		public void checkBoxClick()
 		{
 			CheckBox.click();
 		}
 		
-		public void WiFisettingsClick()
+		public void wiFisettingsClick()
 		{
 			WiFisettings.click();
 		}
+		
+		public void textBoxSendText(String text)
+		{
+		//	WiFisettings.click();
+			TextBox.sendKeys(text);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }

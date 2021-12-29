@@ -33,7 +33,7 @@ public class SwipeTest extends base {
 	}
 	
 	@Test(dataProvider="getData")
-	public void test1(String number1, String number2, String number3) throws MalformedURLException
+	public void Swipe(String number1, String number2, String number3) throws MalformedURLException
 	{
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
 		
