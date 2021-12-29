@@ -50,9 +50,13 @@ public class SwipeTest extends base {
 		InlinePage inlinePage = new InlinePage(driver);
 		inlinePage.numberClick(number1);
 		
+		
+		
 		TouchAction t = new TouchAction(driver);
 		t.longPress(longPressOptions().withElement(element(inlinePage.number(number2))).withDuration(ofSeconds(2))).moveTo(element(inlinePage.number(number3))).release().perform();
 	}
+	
+	
 	
 	@DataProvider
 	public Object[][] getData()
