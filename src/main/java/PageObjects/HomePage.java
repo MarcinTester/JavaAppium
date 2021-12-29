@@ -24,4 +24,9 @@ public class HomePage {
 	{
 		Views.click();
 	}
+	
+	public void preferencesClick()
+	{
+		Preferences.click();
+	}
 }
