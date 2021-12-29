@@ -40,7 +40,7 @@ public class TextTest  extends base {
 	public Object[][] getData()
 	{
 	Object[][] data= new Object[1][1];
-	data[0][0] = "test";
+	data[0][0] = "test text";
 
 	return data;
 	}
