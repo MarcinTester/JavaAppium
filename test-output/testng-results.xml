@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12971" started-at="2021-12-29T16:50:21 CET" finished-at="2021-12-29T16:50:34 CET">
+  <suite name="Suite" duration-ms="42579" started-at="2021-12-29T18:06:10 CET" finished-at="2021-12-29T18:06:52 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12971" started-at="2021-12-29T16:50:21 CET" finished-at="2021-12-29T16:50:34 CET">
+    <test name="Test" duration-ms="42579" started-at="2021-12-29T18:06:10 CET" finished-at="2021-12-29T18:06:52 CET">
       <class name="AppiumProject.JavaAppium.TextTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.TextTest@8e24743]" name="test1" duration-ms="12921" started-at="2021-12-29T16:50:22 CET" finished-at="2021-12-29T16:50:34 CET">
+        <test-method status="PASS" signature="Text(java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.TextTest@319b92f3]" name="Text" duration-ms="13226" started-at="2021-12-29T18:06:39 CET" data-provider="getData" finished-at="2021-12-29T18:06:52 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Text -->
+      </class> <!-- AppiumProject.JavaAppium.TextTest -->
+      <class name="AppiumProject.JavaAppium.SwipeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@a74868d]" name="setUp" is-config="true" duration-ms="10121" started-at="2021-12-29T18:06:10 CET" finished-at="2021-12-29T18:06:20 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Swipe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@a74868d]" name="Swipe" duration-ms="19186" started-at="2021-12-29T18:06:20 CET" data-provider="getData" finished-at="2021-12-29T18:06:39 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Swipe -->
+      </class> <!-- AppiumProject.JavaAppium.SwipeTest -->
+      <class name="AppiumProject.JavaAppium.Print2Test">
+        <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.Print2Test@fcd6521]" name="test1" duration-ms="1" started-at="2021-12-29T18:06:52 CET" finished-at="2021-12-29T18:06:52 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- AppiumProject.JavaAppium.TextTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:AppiumProject.JavaAppium.Print2Test@fcd6521]" name="test2" duration-ms="1" started-at="2021-12-29T18:06:52 CET" finished-at="2021-12-29T18:06:52 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- AppiumProject.JavaAppium.Print2Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
