@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="AppiumProject.JavaAppium.SwipeTest"/>
+       <class name="AppiumProject.JavaAppium.PrintTest"/>
+        <class name="AppiumProject.JavaAppium.Print2Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
