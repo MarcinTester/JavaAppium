@@ -2,12 +2,33 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20128" started-at="2021-12-28T22:37:16 CET" finished-at="2021-12-28T22:37:36 CET">
+  <suite name="Default suite" duration-ms="29241" started-at="2021-12-29T00:58:14 CET" finished-at="2021-12-29T00:58:44 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20128" started-at="2021-12-28T22:37:16 CET" finished-at="2021-12-28T22:37:36 CET">
+    <test name="Default test" duration-ms="29241" started-at="2021-12-29T00:58:14 CET" finished-at="2021-12-29T00:58:44 CET">
       <class name="AppiumProject.JavaAppium.SwipeTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@1d371b2d]" name="test1" duration-ms="20093" started-at="2021-12-28T22:37:16 CET" finished-at="2021-12-28T22:37:36 CET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@2de8284b]" name="setUp" is-config="true" duration-ms="9602" started-at="2021-12-29T00:58:14 CET" finished-at="2021-12-29T00:58:24 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@2de8284b]" name="test1" duration-ms="19601" started-at="2021-12-29T00:58:24 CET" data-provider="getData" finished-at="2021-12-29T00:58:44 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
