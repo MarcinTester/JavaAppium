@@ -5,7 +5,11 @@
     <classes>
       <class name="AppiumProject.JavaAppium.ScrollTest">
         <methods>
+<<<<<<< HEAD
           <include name="ScrollTest1"/>
+=======
+          <include name="Text" invocation-numbers="0"/>
+>>>>>>> 306b323424a3fb45002edd96cf441045dc29b3f7
         </methods>
       </class> <!-- AppiumProject.JavaAppium.ScrollTest -->
     </classes>

@@ -5,8 +5,12 @@
     <classes>
       <class name="AppiumProject.JavaAppium.SwipeTest">
         <methods>
+<<<<<<< HEAD
           <include name="setUp"/>
           <include name="test1"/>
+=======
+          <include name="Text" invocation-numbers="0"/>
+>>>>>>> 306b323424a3fb45002edd96cf441045dc29b3f7
         </methods>
       </class> <!-- AppiumProject.JavaAppium.SwipeTest -->
     </classes>

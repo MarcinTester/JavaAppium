@@ -6,7 +6,11 @@
       <class name="AppiumProject.JavaAppium.SwipeTest">
         <methods>
           <include name="setUp"/>
+<<<<<<< HEAD
           <include name="test1"/>
+=======
+          <include name="Swipe" invocation-numbers="0"/>
+>>>>>>> 306b323424a3fb45002edd96cf441045dc29b3f7
         </methods>
       </class> <!-- AppiumProject.JavaAppium.SwipeTest -->
     </classes>

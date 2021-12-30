@@ -2,15 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="59087" started-at="2021-12-30T18:30:45 CET" finished-at="2021-12-30T18:31:44 CET">
     <groups>
     </groups>
     <test name="Test" duration-ms="59087" started-at="2021-12-30T18:30:45 CET" finished-at="2021-12-30T18:31:44 CET">
       <class name="AppiumProject.JavaAppium.TextTest">
         <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.TextTest@2e3fc542]" name="test1" duration-ms="16281" started-at="2021-12-30T18:31:28 CET" finished-at="2021-12-30T18:31:44 CET">
+=======
+  <suite name="Default suite" duration-ms="14436" started-at="2021-12-29T19:57:01 CET" finished-at="2021-12-29T19:57:15 CET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14436" started-at="2021-12-29T19:57:01 CET" finished-at="2021-12-29T19:57:15 CET">
+      <class name="AppiumProject.JavaAppium.TextTest">
+        <test-method status="PASS" signature="Text(java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.TextTest@13eb8acf]" name="Text" duration-ms="14359" started-at="2021-12-29T19:57:01 CET" data-provider="getData" finished-at="2021-12-29T19:57:15 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test text]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> 306b323424a3fb45002edd96cf441045dc29b3f7
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
+        </test-method> <!-- Text -->
       </class> <!-- AppiumProject.JavaAppium.TextTest -->
       <class name="AppiumProject.JavaAppium.SwipeTest">
         <test-method status="PASS" signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@12c8a2c0]" name="test1" duration-ms="24266" started-at="2021-12-30T18:30:45 CET" data-provider="getData" finished-at="2021-12-30T18:31:10 CET">
