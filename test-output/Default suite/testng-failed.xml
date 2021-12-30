@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AppiumProject.JavaAppium.TextTest">
+      <class name="AppiumProject.JavaAppium.ScrollTest">
         <methods>
-          <include name="test1"/>
+          <include name="ScrollTest1"/>
         </methods>
-      </class> <!-- AppiumProject.JavaAppium.TextTest -->
+      </class> <!-- AppiumProject.JavaAppium.ScrollTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
