@@ -25,6 +25,7 @@ public class TextTest  extends base {
 		
 		homePage.preferencesClick();
 		
+		
 		PreferencesPage preferencesPage = new PreferencesPage(driver);
 		
 		preferencesPage.preferenceDependenciesClick();
@@ -41,6 +42,8 @@ public class TextTest  extends base {
 	public Object[][] getData() {
 	Object[][] data= new Object[1][1];
 	data[0][0] = "test";
+	
+	
 	return data;
 	}
 	
