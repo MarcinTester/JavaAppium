@@ -30,7 +30,6 @@ public class base {
 			
 			serverSocket.close();
 		} catch (IOException e) {
-			//If control comes here, then it means that the port is in use
 			isServerRunning = true;
 		} finally {
 			serverSocket = null;
