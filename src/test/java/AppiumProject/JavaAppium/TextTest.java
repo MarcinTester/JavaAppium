@@ -25,6 +25,7 @@ public class TextTest  extends base {
 		
 		homePage.preferencesClick();
 		
+		
 		PreferencesPage preferencesPage = new PreferencesPage(driver);
 		
 		preferencesPage.preferenceDependenciesClick();
