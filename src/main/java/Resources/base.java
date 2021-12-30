@@ -17,9 +17,13 @@ public class base {
 	public static AppiumDriverLocalService service;
 	public AppiumDriverLocalService startServer()
 	{
-		service = AppiumDriverLocalService.buildDefaultService();
-		service.start();
-		return service;
+		boolean flag=checkIfServerIsRunnning(4723);
+		if(!flag)
+		{	
+			service=AppiumDriverLocalService.buildDefaultService();
+			service.start();
+		}
+			return service;
 	}
 	public static boolean checkIfServerIsRunnning(int port) {
 		
@@ -30,7 +34,6 @@ public class base {
 			
 			serverSocket.close();
 		} catch (IOException e) {
-			//If control comes here, then it means that the port is in use
 			isServerRunning = true;
 		} finally {
 			serverSocket = null;
@@ -59,7 +62,6 @@ public class base {
 
 
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
-		
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
@@ -69,5 +71,3 @@ public class base {
 	}
 
 }
-//test
-//test2

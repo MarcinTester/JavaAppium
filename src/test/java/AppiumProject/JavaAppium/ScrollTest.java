@@ -17,8 +17,7 @@ import io.appium.java_client.android.AndroidElement;
 public class ScrollTest  extends base {
 
 	@Test
-	public void ScrollTest1() throws MalformedURLException
-	{
+	public void ScrollTest1() throws MalformedURLException{
 		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
