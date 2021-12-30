@@ -16,8 +16,8 @@ import io.appium.java_client.android.AndroidElement;
 public class TextTest  extends base {
 
 	@Test(dataProvider="getData")
-	public void Text(String test) throws MalformedURLException
-	{
+	public void Text(String test) throws MalformedURLException	{
+		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
 		
@@ -31,7 +31,6 @@ public class TextTest  extends base {
 		
 		PreferencesDependenciesPage preferencesDependenciesPage = new PreferencesDependenciesPage(driver);
 	
-
 		preferencesDependenciesPage.checkBoxClick();
 		preferencesDependenciesPage.wiFisettingsClick();
 		preferencesDependenciesPage.textBoxSendText(test);
@@ -39,11 +38,9 @@ public class TextTest  extends base {
 	}
 	
 	@DataProvider
-	public Object[][] getData()
-	{
+	public Object[][] getData() {
 	Object[][] data= new Object[1][1];
 	data[0][0] = "test text";
-
 	return data;
 	}
 	
