@@ -9,8 +9,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class base {
+	public static AppiumDriverLocalService service;
+	public AppiumDriverLocalService startServer()
+	{
+		service = AppiumDriverLocalService.buildDefaultService();
+		service.start();
+		return service;
+	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String App) throws MalformedURLException
 	{

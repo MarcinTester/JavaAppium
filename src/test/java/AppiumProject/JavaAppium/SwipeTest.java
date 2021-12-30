@@ -26,15 +26,12 @@ import java.io.IOException;
 public class SwipeTest extends base {
 
 	
-	@BeforeMethod
-	public void setUp() throws IOException
-	{
-		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
-	}
+
 	
 	@Test(dataProvider="getData")
 	public void test1(String number1, String number2, String number3) throws MalformedURLException
 	{
+		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
 		
 		HomePage homePage = new HomePage(driver); 
@@ -54,6 +51,7 @@ public class SwipeTest extends base {
 		
 		TouchAction t = new TouchAction(driver);
 		t.longPress(longPressOptions().withElement(element(inlinePage.number(number2))).withDuration(ofSeconds(2))).moveTo(element(inlinePage.number(number3))).release().perform();
+		service.stop();
 	}
 	
 	

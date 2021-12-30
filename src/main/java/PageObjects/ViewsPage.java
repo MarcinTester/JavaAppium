@@ -18,9 +18,16 @@ public class ViewsPage {
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Date Widgets']")
 	public WebElement DateWidgets;
 
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Radio Group']")
+	public WebElement RadioGroup;
 	
 	public void dateWidgetsClick()
 	{
 		DateWidgets.click();
+	}
+	
+	public void radioGroupClick()
+	{
+		RadioGroup.click();
 	}
 }

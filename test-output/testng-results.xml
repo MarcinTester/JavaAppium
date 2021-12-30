@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12971" started-at="2021-12-29T16:50:21 CET" finished-at="2021-12-29T16:50:34 CET">
+  <suite name="Suite" duration-ms="59087" started-at="2021-12-30T18:30:45 CET" finished-at="2021-12-30T18:31:44 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12971" started-at="2021-12-29T16:50:21 CET" finished-at="2021-12-29T16:50:34 CET">
+    <test name="Test" duration-ms="59087" started-at="2021-12-30T18:30:45 CET" finished-at="2021-12-30T18:31:44 CET">
       <class name="AppiumProject.JavaAppium.TextTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.TextTest@8e24743]" name="test1" duration-ms="12921" started-at="2021-12-29T16:50:22 CET" finished-at="2021-12-29T16:50:34 CET">
+        <test-method status="PASS" signature="test1()[pri:0, instance:AppiumProject.JavaAppium.TextTest@2e3fc542]" name="test1" duration-ms="16281" started-at="2021-12-30T18:31:28 CET" finished-at="2021-12-30T18:31:44 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- AppiumProject.JavaAppium.TextTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="AppiumProject.JavaAppium.SwipeTest">
+        <test-method status="PASS" signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:AppiumProject.JavaAppium.SwipeTest@12c8a2c0]" name="test1" duration-ms="24266" started-at="2021-12-30T18:30:45 CET" data-provider="getData" finished-at="2021-12-30T18:31:10 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- AppiumProject.JavaAppium.SwipeTest -->
+      <class name="AppiumProject.JavaAppium.ScrollTest">
+        <test-method status="PASS" signature="ScrollTest1()[pri:0, instance:AppiumProject.JavaAppium.ScrollTest@544a2ea6]" name="ScrollTest1" duration-ms="18499" started-at="2021-12-30T18:31:10 CET" finished-at="2021-12-30T18:31:28 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollTest1 -->
+      </class> <!-- AppiumProject.JavaAppium.ScrollTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

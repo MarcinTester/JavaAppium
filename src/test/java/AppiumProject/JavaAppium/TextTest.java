@@ -17,6 +17,7 @@ public class TextTest  extends base {
 	@Test
 	public void test1() throws MalformedURLException
 	{
+		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
 		
 		HomePage homePage = new HomePage(driver); 
@@ -31,6 +32,7 @@ public class TextTest  extends base {
 		
 		preferencesDependenciesPage.CheckBoxClick();
 		preferencesDependenciesPage.WiFisettingsClick();
+		service.stop();
 	}
 	
 	
