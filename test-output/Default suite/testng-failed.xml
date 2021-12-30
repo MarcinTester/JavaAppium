@@ -5,7 +5,7 @@
     <classes>
       <class name="AppiumProject.JavaAppium.TextTest">
         <methods>
-          <include name="test1"/>
+          <include name="Text" invocation-numbers="0"/>
         </methods>
       </class> <!-- AppiumProject.JavaAppium.TextTest -->
     </classes>

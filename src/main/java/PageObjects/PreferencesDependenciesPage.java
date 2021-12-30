@@ -20,12 +20,12 @@
 		@AndroidFindBy(id="android:id/checkbox")
 		public WebElement CheckBox;	
 		
-		@AndroidFindBy(xpath="//android.widget.TextView[@text='WiFi settings']")
+		@AndroidFindBy(xpath="(//android.widget.RelativeLayout)[2]")
 		public WebElement WiFisettings;	
 		
 		@AndroidFindBy(className="android.widget.EditText")
 		public WebElement TextBox;	
-		
+
 		
 		public void checkBoxClick()
 		{
