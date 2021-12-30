@@ -1,6 +1,8 @@
 package Resources;
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.ServerSocket;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +21,22 @@ public class base {
 		service.start();
 		return service;
 	}
-
+	public static boolean checkIfServerIsRunnning(int port) {
+		
+		boolean isServerRunning = false;
+		ServerSocket serverSocket;
+		try {
+			serverSocket = new ServerSocket(port);
+			
+			serverSocket.close();
+		} catch (IOException e) {
+			//If control comes here, then it means that the port is in use
+			isServerRunning = true;
+		} finally {
+			serverSocket = null;
+		}
+		return isServerRunning;
+	}
 	public static AndroidDriver<AndroidElement> capabilities(String App) throws MalformedURLException
 	{
 		
