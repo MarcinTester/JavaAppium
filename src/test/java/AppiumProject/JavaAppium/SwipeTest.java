@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,12 @@ import static java.time.Duration.ofSeconds;
 import java.io.IOException;
 
 public class SwipeTest extends base {
+	
+	@BeforeTest
+	public void killAllNodes() throws IOException, InterruptedException {
+		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
+		Thread.sleep(3000);
+	}
 	
 	@Test(dataProvider="getData")
 	public void Swipe(String number1, String number2, String number3) throws IOException, InterruptedException {
