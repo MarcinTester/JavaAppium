@@ -4,7 +4,6 @@ package AppiumProject.JavaAppium;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,12 +16,6 @@ import io.appium.java_client.android.AndroidElement;
 
 public class TextTest  extends base {
 
-	@BeforeTest
-	public void killAllNodes() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Thread.sleep(3000);
-	}
-	
 	@Test(dataProvider="getData")
 	public void Text(String test) throws IOException, InterruptedException	{
 		

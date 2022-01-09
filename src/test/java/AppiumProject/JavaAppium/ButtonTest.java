@@ -1,8 +1,6 @@
 package AppiumProject.JavaAppium;
 import static org.testng.Assert.assertEquals;
 import java.io.IOException;
-
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.RadioGroupPage;
@@ -14,11 +12,6 @@ import io.appium.java_client.android.AndroidElement;
 
 public class ButtonTest  extends base {
 
-	@BeforeTest
-	public void killAllNodes() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Thread.sleep(3000);
-	}
 	@Test
 	public void ButtonTest1() throws IOException, InterruptedException{
 		
@@ -36,7 +29,8 @@ public class ButtonTest  extends base {
 		viewsPage.radioGroupClick();
 		
 		RadioGroupPage radioGroupPage = new RadioGroupPage(driver);
-	
+
+			
 		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("false"), true);
 		radioGroupPage.dinnerButtonClick();
 		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("true"), true);

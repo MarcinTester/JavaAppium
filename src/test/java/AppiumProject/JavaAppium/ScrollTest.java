@@ -6,7 +6,8 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import org.testng.annotations.BeforeTest;
+
+
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
@@ -19,12 +20,6 @@ import io.appium.java_client.android.AndroidElement;
 
 public class ScrollTest  extends base {
 
-	@BeforeTest
-	public void killAllNodes() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Thread.sleep(3000);
-	}
-	
 	@Test
 	public void ScrollTest1() throws IOException, InterruptedException{
 		
