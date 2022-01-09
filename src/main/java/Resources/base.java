@@ -53,7 +53,7 @@ public class base {
 	}
 	public static AndroidDriver<AndroidElement> capabilities(String App) throws IOException, InterruptedException
 	{
-		startEmulator();
+	//	startEmulator();
 		AndroidDriver<AndroidElement> driver;
 		File appDir = new File("src");
 		System.out.println(appDir);
