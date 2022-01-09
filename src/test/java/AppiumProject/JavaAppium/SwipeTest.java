@@ -12,7 +12,6 @@ import PageObjects.DataWidgetsPage;
 import PageObjects.HomePage;
 import PageObjects.InlinePage;
 import PageObjects.ViewsPage;
-import Resources.TestData;
 import Resources.base;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -33,7 +32,7 @@ public class SwipeTest extends base {
 		Thread.sleep(3000);
 	}
 	
-	@Test(dataProvider="SwipeTestData", dataProviderClass = TestData.class)
+	@Test(dataProvider="getData")
 	public void Swipe(String number1, String number2, String number3) throws IOException, InterruptedException {
 		
 		service = startServer();
@@ -56,14 +55,14 @@ public class SwipeTest extends base {
 		service.stop();
 	}
 	
-//	@DataProvider
-//	public Object[][] getData()	{
-//		
-//	Object[][] data= new Object[1][3];
-//	data[0][0] = "10";
-//	data[0][1] = "25";
-//	data[0][2] = "55";
-//	return data;
-//	}
+	@DataProvider
+	public Object[][] getData()	{
+		
+	Object[][] data= new Object[1][3];
+	data[0][0] = "10";
+	data[0][1] = "25";
+	data[0][2] = "55";
+	return data;
+	}
 	
 }

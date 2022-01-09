@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.PreferencesDependenciesPage;
 import PageObjects.PreferencesPage;
-import Resources.TestData;
 import Resources.base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -24,7 +23,7 @@ public class TextTest  extends base {
 		Thread.sleep(3000);
 	}
 	
-	@Test(dataProvider="InputData", dataProviderClass = TestData.class)
+	@Test(dataProvider="getData")
 	public void Text(String test) throws IOException, InterruptedException	{
 		
 		service = startServer();
@@ -47,4 +46,12 @@ public class TextTest  extends base {
 		preferencesDependenciesPage.okButtonClick();
 		service.stop();
 	}
+	
+	@DataProvider
+	public Object[][] getData() {
+	Object[][] data= new Object[1][1];
+	data[0][0] = "test";
+	return data;
+	}
+	
 }
