@@ -1,5 +1,5 @@
-PageObjects\DataWidgetsPage.class
 PageObjects\InlinePage.class
+Resources\base.class
 PageObjects\HomePage.class
 PageObjects\ViewsPage.class
-Resources\base.class
+PageObjects\DataWidgetsPage.class

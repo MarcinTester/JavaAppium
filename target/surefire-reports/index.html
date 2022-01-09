@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.ButtonTest" hash-for-method="ButtonTest1">ButtonTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.TextTest" hash-for-method="Text">Text</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.SwipeTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.ScrollTest" hash-for-method="ScrollTest1">ScrollTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.SwipeTest" hash-for-method="Swipe(10, 20, 35)">Swipe(10, 20, 35)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="AppiumProject.JavaAppium.SwipeTest" hash-for-method="Swipe(10, 25, 55)">Swipe(10, 25, 55)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -119,6 +148,64 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AppiumProject.JavaAppium.TextTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Text">
+                  </a> <!-- Text -->
+                  <span class="method-name">Text</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void AppiumProject.JavaAppium.TextTest.Text(java.lang.String) throws java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: Text([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) 10,(java.lang.String) 25,(java.lang.String) 55]
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AppiumProject.JavaAppium.ButtonTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ButtonTest1">
+                  </a> <!-- ButtonTest1 -->
+                  <span class="method-name">ButtonTest1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at AppiumProject.JavaAppium.ButtonTest.ButtonTest1(ButtonTest.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AppiumProject.JavaAppium.ScrollTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ScrollTest1">
+                  </a> <!-- ScrollTest1 -->
+                  <span class="method-name">ScrollTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -127,9 +214,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="Swipe(10, 20, 35)">
+                  </a> <!-- Swipe(10, 20, 35) -->
+                  <span class="method-name">Swipe</span>
+                  <span class="parameters">(10, 20, 35)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Swipe(10, 25, 55)">
+                  </a> <!-- Swipe(10, 25, 55) -->
+                  <span class="method-name">Swipe</span>
+                  <span class="parameters">(10, 25, 55)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +241,10 @@
 &lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;AppiumProject.JavaAppium.ButtonTest&quot;/&gt;
+      &lt;class name=&quot;AppiumProject.JavaAppium.ScrollTest&quot;/&gt;
       &lt;class name=&quot;AppiumProject.JavaAppium.SwipeTest&quot;/&gt;
+      &lt;class name=&quot;AppiumProject.JavaAppium.TextTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -159,7 +258,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +284,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
+data.setCell(0, 1, 'Swipe')
 data.setCell(0, 2, 'AppiumProject.JavaAppium.SwipeTest')
-data.setCell(0, 3, 20351);
+data.setCell(0, 3, 30681);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Swipe')
+data.setCell(1, 2, 'AppiumProject.JavaAppium.SwipeTest')
+data.setCell(1, 3, 29290);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ButtonTest1')
+data.setCell(2, 2, 'AppiumProject.JavaAppium.ButtonTest')
+data.setCell(2, 3, 26443);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ScrollTest1')
+data.setCell(3, 2, 'AppiumProject.JavaAppium.ScrollTest')
+data.setCell(3, 3, 20351);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Text')
+data.setCell(4, 2, 'AppiumProject.JavaAppium.TextTest')
+data.setCell(4, 3, 1);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -220,10 +335,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.ButtonTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">killAllNodes</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.ScrollTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">killAllNodes</span>
+                <span class="method-start">3023 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.SwipeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">killAllNodes</span>
+                <span class="method-start">6034 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.TextTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">killAllNodes</span>
+                <span class="method-start">9056 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.ButtonTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ButtonTest1</span>
+                <span class="method-start">12102 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppiumProject.JavaAppium.ScrollTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ScrollTest1</span>
+                <span class="method-start">38554 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">AppiumProject.JavaAppium.SwipeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">Swipe(10, 25, 55)</span>
+                <span class="method-start">58910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Swipe(10, 20, 35)</span>
+                <span class="method-start">89592 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

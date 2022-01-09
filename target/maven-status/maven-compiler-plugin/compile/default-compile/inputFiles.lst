@@ -1,5 +1,12 @@
 C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\Resources\base.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\RadioGroupPage.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\Resources\ExtentReporterNG.java
 C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\HomePage.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\PreferencesPage.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\Resources\Listeners.java
 C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\DataWidgetsPage.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\PreferencesDependenciesPage.java
 C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\InlinePage.java
 C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\PageObjects\ViewsPage.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\Resources\TestData.java
+C:\Users\Marcin\eclipse-workspace\JavaAppium\src\main\java\Resources\Utilities.java
