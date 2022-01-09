@@ -1,8 +1,6 @@
 package AppiumProject.JavaAppium;
 
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -11,7 +9,6 @@ import java.net.MalformedURLException;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
-import PageObjects.RadioGroupPage;
 import PageObjects.ViewsPage;
 import Resources.base;
 import Resources.Utilities;
@@ -33,11 +30,8 @@ public class ScrollTest  extends base {
 		u.scrollToText("Radio Group");
 		
 		ViewsPage viewsPage = new ViewsPage(driver);
-
-		assertEquals(viewsPage.RadioGroup.isDisplayed(), true);
-		System.out.println(viewsPage.RadioGroup.isDisplayed());
-		viewsPage.radioGroupClick();
 		
+		viewsPage.radioGroupClick();
 		service.stop();
 	}	
 }
