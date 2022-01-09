@@ -40,20 +40,16 @@ public class base {
 		}
 		return isServerRunning;
 	}
-	
-	public static void startEmulator() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("C:\\Users\\Marcin\\eclipse-workspace\\JavaAppium\\src\\main\\java\\Resources\\startEmulator.bat");
-		Thread.sleep(6000);
-	}
-	public static AndroidDriver<AndroidElement> capabilities(String App) throws IOException, InterruptedException
+	public static AndroidDriver<AndroidElement> capabilities(String App) throws MalformedURLException
 	{
-		startEmulator();
+		
 		AndroidDriver<AndroidElement> driver;
 		File appDir = new File("src");
 		System.out.println(appDir);
 		DesiredCapabilities cap = new DesiredCapabilities();
 		if (App.equals("Api-Demos"))
 			{
+			
 			
 			File app = new File(appDir, "ApiDemos-debug.apk");
 			cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
@@ -63,6 +59,8 @@ public class base {
 				File app = new File(appDir, "General-Store.apk");
 				cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 			}
+
+
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		
