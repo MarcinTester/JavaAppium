@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.RadioGroupPage;
 import PageObjects.ViewsPage;
-import Resources.base;
+import Resources.Base;
 import Resources.Utilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class ButtonTest  extends base {
+public class ButtonTest  extends Base {
 
 	@BeforeTest
 	public void killAllNodes() throws IOException, InterruptedException {

@@ -7,11 +7,11 @@ import javax.naming.spi.DirStateFactory.Result;
 import org.testng.ITestContext ;		
 import org.testng.ITestListener ;		
 import org.testng.ITestResult ;		
-import Resources.base;
+import Resources.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class Listeners extends base implements ITestListener						
+public class Listeners extends Base implements ITestListener						
 {		
     @Override		
     public void onFinish(ITestContext arg0) {					
@@ -37,7 +37,7 @@ public class Listeners extends base implements ITestListener
         String s = result.getName();
         try {
         	
-			base.getScreenshot(s);
+			Base.getScreenshot(s);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

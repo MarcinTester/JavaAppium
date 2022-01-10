@@ -12,11 +12,11 @@ import PageObjects.HomePage;
 import PageObjects.PreferencesDependenciesPage;
 import PageObjects.PreferencesPage;
 import Resources.TestData;
-import Resources.base;
+import Resources.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class TextTest  extends base {
+public class TextTest  extends Base {
 
 	@BeforeTest
 	public void killAllNodes() throws IOException, InterruptedException {

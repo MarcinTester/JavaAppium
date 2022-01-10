@@ -12,12 +12,12 @@ import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.RadioGroupPage;
 import PageObjects.ViewsPage;
-import Resources.base;
+import Resources.Base;
 import Resources.Utilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class ScrollTest  extends base {
+public class ScrollTest  extends Base {
 
 	@BeforeTest
 	public void killAllNodes() throws IOException, InterruptedException {
