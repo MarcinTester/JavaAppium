@@ -63,6 +63,8 @@ public class base {
 				File app = new File(appDir, "General-Store.apk");
 				cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 			}
+		
+		
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		
