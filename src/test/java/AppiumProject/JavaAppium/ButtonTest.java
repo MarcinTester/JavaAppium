@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import PageObjects.HomePage;
 import PageObjects.RadioGroupPage;
 import PageObjects.ViewsPage;
@@ -37,7 +38,7 @@ public class ButtonTest  extends base {
 		
 		RadioGroupPage radioGroupPage = new RadioGroupPage(driver);
 	
-		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("false"), false);
+		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("false"), true);
 		radioGroupPage.dinnerButtonClick();
 		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("true"), true);
 		

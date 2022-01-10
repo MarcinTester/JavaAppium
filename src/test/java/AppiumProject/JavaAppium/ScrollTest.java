@@ -1,6 +1,7 @@
 package AppiumProject.JavaAppium;
 
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 
@@ -20,7 +21,7 @@ import io.appium.java_client.android.AndroidElement;
 public class ScrollTest  extends base {
 
 	@Test
-	public void ScrollTest1() throws MalformedURLException{
+	public void ScrollTest1() throws IOException, InterruptedException{
 		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");

@@ -1,6 +1,7 @@
 package AppiumProject.JavaAppium;
 
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.testng.annotations.DataProvider;
@@ -16,7 +17,7 @@ import io.appium.java_client.android.AndroidElement;
 public class TextTest  extends base {
 
 	@Test(dataProvider="getData")
-	public void Text(String test) throws MalformedURLException	{
+	public void Text(String test) throws IOException, InterruptedException	{
 		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
