@@ -6,7 +6,6 @@
       <class name="AppiumProject.JavaAppium.SwipeTest"/>
        <class name="AppiumProject.JavaAppium.ScrollTest"/>
        <class name="AppiumProject.JavaAppium.TextTest"/>
-        <class name="AppiumProject.JavaAppium.ButtonTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

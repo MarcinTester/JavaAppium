@@ -26,7 +26,7 @@ import java.io.IOException;
 public class SwipeTest extends base {
 	
 	@Test(dataProvider="getData")
-	public void Swipe(String number1, String number2, String number3) throws IOException, InterruptedException {
+	public void Swipe(String number1, String number2, String number3) throws MalformedURLException {
 		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
