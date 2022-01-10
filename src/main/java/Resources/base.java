@@ -42,7 +42,7 @@ public class base {
 	}
 	public static AndroidDriver<AndroidElement> capabilities(String App) throws MalformedURLException
 	{
-		
+
 		AndroidDriver<AndroidElement> driver;
 		File appDir = new File("src");
 		System.out.println(appDir);
