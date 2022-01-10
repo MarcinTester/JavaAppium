@@ -20,21 +20,16 @@
 		@AndroidFindBy(id="android:id/checkbox")
 		public WebElement CheckBox;	
 		
-		@AndroidFindBy(id="android:id/button1")
-		public WebElement OkButton;	
-		
 		@AndroidFindBy(xpath="(//android.widget.RelativeLayout)[2]")
 		public WebElement WiFisettings;	
 		
 		@AndroidFindBy(className="android.widget.EditText")
 		public WebElement TextBox;	
 
-		public void checkBoxClick()	{
-			CheckBox.click();
-		}
 		
-		public void okButtonClick(){
-			OkButton.click();
+		public void checkBoxClick()
+		{
+			CheckBox.click();
 		}
 		
 		public void wiFisettingsClick()

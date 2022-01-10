@@ -31,11 +31,6 @@
 		    <version>7.5.1</version>
 		</dependency>	
 		<dependency>
-	    <groupId>com.aventstack</groupId>
-	    <artifactId>extentreports</artifactId>
-	    <version>4.0.0</version>
-		</dependency>
-		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-java</artifactId>
 		    <version>3.141.59</version>
@@ -73,28 +68,17 @@
 		    <groupId>commons-validator</groupId>
 		    <artifactId>commons-validator</artifactId>
 		    <version>1.7</version>
-		</dependency>	
+		</dependency>
+				
+		
+				
+		
+				
   </dependencies>
 
   <build>
-  <resources>
-        <resource>
-        <directory>src/main/java/Resources</directory>
-        <filtering>true</filtering>
-      </resource>
-        </resources>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>

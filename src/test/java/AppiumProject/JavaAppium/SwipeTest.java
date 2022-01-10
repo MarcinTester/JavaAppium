@@ -4,7 +4,6 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,6 @@ import PageObjects.DataWidgetsPage;
 import PageObjects.HomePage;
 import PageObjects.InlinePage;
 import PageObjects.ViewsPage;
-import Resources.TestData;
 import Resources.base;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -27,14 +25,8 @@ import java.io.IOException;
 
 public class SwipeTest extends base {
 	
-	@BeforeTest
-	public void killAllNodes() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Thread.sleep(3000);
-	}
-	
-	@Test(dataProvider="SwipeTestData", dataProviderClass = TestData.class)
-	public void Swipe(String number1, String number2, String number3) throws IOException, InterruptedException {
+	@Test(dataProvider="getData")
+	public void Swipe(String number1, String number2, String number3) throws MalformedURLException {
 		
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = capabilities("Api-Demos");
@@ -56,14 +48,14 @@ public class SwipeTest extends base {
 		service.stop();
 	}
 	
-//	@DataProvider
-//	public Object[][] getData()	{
-//		
-//	Object[][] data= new Object[1][3];
-//	data[0][0] = "10";
-//	data[0][1] = "25";
-//	data[0][2] = "55";
-//	return data;
-//	}
+	@DataProvider
+	public Object[][] getData()	{
+		
+	Object[][] data= new Object[1][3];
+	data[0][0] = "10";
+	data[0][1] = "25";
+	data[0][2] = "55";
+	return data;
+	}
 	
 }
