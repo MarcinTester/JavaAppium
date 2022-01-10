@@ -37,7 +37,7 @@ public class ButtonTest  extends base {
 		
 		RadioGroupPage radioGroupPage = new RadioGroupPage(driver);
 	
-		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("false"), true);
+		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("false"), false);
 		radioGroupPage.dinnerButtonClick();
 		assertEquals(radioGroupPage.DinnerButton.getAttribute("checked").equals("true"), true);
 		
